@@ -41,7 +41,7 @@ associated with the word. I thought I was done, but then I realized that for mor
 `nineoneonetwoneightwo`, there were some numbers missing. The last digit `two` was missing for example. It would found
 `eight` and I suppose it wouldn't use the letter t to compose the word `two`. <br>
 I then decided to use search instead of findall. It would only return the first match, but then I thought that I could 
-use it both way to get. I checked the documentation but didn't find a way to start by finding the last match.
+use it in reverse too. I checked the documentation but didn't find a way to start by finding the last match.
 I decided to reverse the string and then use search to get the last match. I also had to reserve the dictionary to get 
 the matching string.
 
