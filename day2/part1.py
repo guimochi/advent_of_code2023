@@ -2,9 +2,6 @@ import re
 from typing import List
 
 
-# 48 minutes
-
-
 # I have used the term game round because it was becoming to confusing and set is a reserved word
 def get_nb_for_each_color(game_rounds: List[str]):
     name_color_nb_dict: {str, int} = {}

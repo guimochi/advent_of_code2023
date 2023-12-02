@@ -1,9 +1,6 @@
 import re
 from part1 import get_nb_for_each_color
 
-# 4 minutes
-
-
 sum_power_sets: int = 0
 
 with open("input.txt", "r") as f:
