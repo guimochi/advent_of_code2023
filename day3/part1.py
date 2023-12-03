@@ -1,10 +1,6 @@
 import re
 from typing import List, Dict, Iterator
 
-before_pattern = re.compile('[@_!#$%^&*()<>?/|}{~:]$')
-after_pattern = re.compile('^[@_!#$%^&*()<>?/|}{~:]')
-final_pattern = re.compile('^[@_!#$%^&*()<>?/|}{~:]|[@_!#$%^&*()<>?/|}{~:]$')
-special_case = re.compile('[@_!#$%^&*()<>?/|}{~:+-]')
 digit_pattern = re.compile(r'\d+')
 
 with (open("input.txt", "r") as f):
