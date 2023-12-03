@@ -80,14 +80,12 @@ def get_total_sum(candidate_coordinates: [(int, int)], dict_line_nb_matches: Dic
 
 with (open("input.txt", "r") as f):
     lines = f.readlines()
-    print(str_unique_chars)
-    # add to set
     # list of tuple with nb line and the match of a special chr
     list_line_special_match: [(int, re.Match)] = create_list_line_special_match(lines)
-    # hashmap with num of line as key and list of matches of numbers
-    dict_line_nb_matches: Dict[int, List[re.Match]] = create_dict_line_nb_matches(lines)
     # all places where we look should for a number
     candidate_coordinates: set[(int, int)] = find_adjacent_coordinates(list_line_special_match)
+    # hashmap with num of line as key and list of matches of numbers
+    dict_line_nb_matches: Dict[int, List[re.Match]] = create_dict_line_nb_matches(lines)
     # get the total sum of all real candidates numbers
     total = get_total_sum(candidate_coordinates, dict_line_nb_matches)
     print('total :', total)
