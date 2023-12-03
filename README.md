@@ -16,9 +16,9 @@ For each puzzle, I will give my personal difficulty, how I proceeded to solve it
 | 18  | 19  | 20  | 21  | 22          | 23          | 24          |
 | 25  | 26  | 27  | 28  | 29          | 30          | 31          |
 
-## Day 1
+## [Day 1](https://github.com/guimochi/advent_of_code2023/tree/main/day1)
 
-### Part 1
+### [Part 1](https://github.com/guimochi/advent_of_code2023/blob/main/day1/part1.py)
 
 #### Difficulty: ⭐️☆☆☆☆
 
@@ -35,7 +35,7 @@ And add this number to a sum through each iteration.
 - List comprehension
 - with to close a resource automatically
 
-### Part 2
+### [Part 2](https://github.com/guimochi/advent_of_code2023/blob/main/day1/part2.py)
 
 #### Difficulty: ⭐️⭐️⭐☆☆
 
@@ -60,9 +60,9 @@ then use search to get the last match. I also had to reverse the dictionary to g
 - extended slice
 - raw string
 
-## Day 2
+## [Day 2](https://github.com/guimochi/advent_of_code2023/tree/main/day2)
 
-### Part 1
+### [Part 1](https://github.com/guimochi/advent_of_code2023/blob/main/day2/part1.py)
 
 #### Difficulty: ⭐️⭐️☆☆☆
 
@@ -81,7 +81,7 @@ few hard-coded values as possible. I am quite pleased with the result.
 - Type hinting
 - Naming variables can be hard 😅
 
-### Part 2
+### [Part 2](https://github.com/guimochi/advent_of_code2023/blob/main/day2/part2.py)
 
 #### Difficulty: ☆☆☆☆☆
 
