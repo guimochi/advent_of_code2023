@@ -1,4 +1,4 @@
-`# [Advent of code 2023](https://adventofcode.com/2023)
+# [Advent of code 2023](https://adventofcode.com/2023)
 
 My solutions to the small programming puzzles
 
