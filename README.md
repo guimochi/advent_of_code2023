@@ -154,7 +154,7 @@ It allowed me to link all adjacent numbers to gear. <br>
 
 This was easy. Just split split split everywhere. The "hardest" part was managing the times 2, but even that is simple.
 
-### [Part 2](https://github.com/guimochi/advent_of_code2023/blob/main/day4/part1.py)
+### [Part 2](https://github.com/guimochi/advent_of_code2023/blob/main/day4/part2.py)
 
 #### Difficulty: ⭐️⭐️⭐️☆☆
 
