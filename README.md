@@ -174,5 +174,5 @@ any time soon.
 - Class
 - List comprehension
 
-## [Day 5]
+## Day 5
 Incoming...
