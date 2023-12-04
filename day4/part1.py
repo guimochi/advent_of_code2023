@@ -1,6 +1,4 @@
-test = 'Card 1: 41 48 83 86 17 | 83 86  6 31 17  9 48 53'
-
-with (open("input.txt", "r") as f):
+with (open("part1", "r") as f):
     sum = 0
     for line in f.readlines():
         card, num_values = line.split(":")
