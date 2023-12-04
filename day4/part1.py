@@ -6,8 +6,6 @@ with (open("part1", "r") as f):
         win_nbs = set(winning_part.split())
         actual_nbs = set(actual_part.split())
 
-        print(win_nbs, actual_nbs)
-
         first_add = True
         calcul = 0
         for win_nb in win_nbs:

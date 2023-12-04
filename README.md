@@ -1,4 +1,4 @@
-# [Advent of code 2023](https://adventofcode.com/2023)
+`# [Advent of code 2023](https://adventofcode.com/2023)
 
 My solutions to the small programming puzzles
 
@@ -8,13 +8,13 @@ For each puzzle, I will give my personal difficulty, how I proceeded to solve it
 
 ## Calendar
 
-| Mon         | Tue | Wed | Thu | Fri         | Sat         | Sun         |
-|-------------|-----|-----|-----|-------------|-------------|-------------|
-|             |     |     |     | [1](#day-1) | [2](#day-2) | [3](#day-3) |
-| [4](#day-4) | 5   | 6   | 7   | 8           | 9           | 10          |
-| 11          | 12  | 13  | 14  | 15          | 16          | 17          |
-| 18          | 19  | 20  | 21  | 22          | 23          | 24          |
-| 25          | 26  | 27  | 28  | 29          | 30          | 31          |
+| Mon         | Tue         | Wed | Thu | Fri         | Sat         | Sun         |
+|-------------|-------------|-----|-----|-------------|-------------|-------------|
+|             |             |     |     | [1](#day-1) | [2](#day-2) | [3](#day-3) |
+| [4](#day-4) | [5](#day-5) | 6   | 7   | 8           | 9           | 10          |
+| 11          | 12          | 13  | 14  | 15          | 16          | 17          |
+| 18          | 19          | 20  | 21  | 22          | 23          | 24          |
+| 25          | 26          | 27  | 28  | 29          | 30          | 31          |
 
 ## [Day 1](https://github.com/guimochi/advent_of_code2023/tree/main/day1)
 
@@ -104,22 +104,29 @@ I barely had to make any changes to make it work.
 
 #### Duration: 3 hours 36 minutes
 
-TThis was quite a challenging experience. I initially misunderstood the puzzle not once, but twice. At first, I thought I was only supposed to check the numbers adjacent to the symbols. Then, I believed I was only supposed to check the top, left, bottom, and right. It finally dawned on me that I also had to check the diagonals. <br>
+TThis was quite a challenging experience. I initially misunderstood the puzzle not once, but twice. At first, I thought
+I was only supposed to check the numbers adjacent to the symbols. Then, I believed I was only supposed to check the top,
+left, bottom, and right. It finally dawned on me that I also had to check the diagonals. <br>
 
-I also lost some time due to my unfamiliarity with the Iterator. I wasn't aware that I couldn't iterate over it more than once. To overcome this, I had to cast it to a list, which allowed me to iterate over it multiple times. <br>
+I also lost some time due to my unfamiliarity with the Iterator. I wasn't aware that I couldn't iterate over it more
+than once. To overcome this, I had to cast it to a list, which allowed me to iterate over it multiple times. <br>
 
-To make the solution as efficient as possible, I utilized a couple of data structures. This might make the solution appear a bit more complicated.<br>
+To make the solution as efficient as possible, I utilized a couple of data structures. This might make the solution
+appear a bit more complicated.<br>
 
-Despite these challenges, I don't think the problem was particularly hard. The code is quite well-documented, so I'll provide a quick explanation of the logic here:<br>
+Despite these challenges, I don't think the problem was particularly hard. The code is quite well-documented, so I'll
+provide a quick explanation of the logic here:<br>
 
 1. I created a list of tuples that retain the line of a symbol and its match.
 2. I created a set of adjacent coordinates that I would need to check.
 3. I created a dictionary with the line as the key and a list of numbers and their respective match.
 4. Finally, I summed all the numbers that are in a candidate coordinate.
 
-On a side note, I had a rough start to the day of the challenge. I had only slept for 3 hours and woke up at 6 am when the challenge started. I had to spot the first misinterpretation right away because I had to go to work.
+On a side note, I had a rough start to the day of the challenge. I had only slept for 3 hours and woke up at 6 am when
+the challenge started. I had to spot the first misinterpretation right away because I had to go to work.
 
 #### Concepts Learned
+
 - Iterable can't be iterated more than once
 - Manipulating set
 - Manipulating dictionary
@@ -132,24 +139,40 @@ On a side note, I had a rough start to the day of the challenge. I had only slep
 #### Duration: 1 hour 16 minutes
 
 The logic stays the same but I had to add the match associated with all candidate coordinates to the coordinates. <br>
-This caused some keys issues with the dictionary. This solved the issued where a number wouldn't appear multiple times if 
+This caused some keys issues with the dictionary. This solved the issued where a number wouldn't appear multiple times
+if
 iy was associated with multiple gears and also the fact that I had no way to associate a number with a gear. <br>
 It allowed me to link all adjacent numbers to gear. <br>
 
-## Day 4
+## [Day 4](https://github.com/guimochi/advent_of_code2023/blob/main/day4)
+
+### [Part 1](https://github.com/guimochi/advent_of_code2023/blob/main/day4/part1.py)
+
+#### Difficulty: ⭐️☆☆☆☆
+
+#### Duration: 15 minutes
+
+This was easy. Just split split split everywhere. The "hardest" part was managing the times 2, but even that is simple.
+
+### [Part 2](https://github.com/guimochi/advent_of_code2023/blob/main/day4/part1.py)
+
+#### Difficulty: ⭐️⭐️⭐️☆☆
+
+#### Duration: Approximately 2 hours
+
+This was quite belong because I lost myself in what I wanted to do multiple times. The fact that I didn't create any
+function in the first exercice didn't help either. As this one was more complicated, i decided to create functions and I
+even created a class for the Scratchcard. <br>
+I had to think a bit for the recursive function. I initally planned to it
+iteratively but it seemed harder. I am quite satisfied with that I managed to it recursively. However, it takes several
+seconds to run. I am not sure if it is because of the recursive function or because I created a new Scratchcard for
+everytime I call the function `get_rewardd(self)` in Scratchcard. I may decide to optimize it a day in the future. But
+it won't be
+any time soon.
+
+#### Concepts Learned
+- Class
+- List comprehension
+
+## [Day 5]
 Incoming...
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
