@@ -8,13 +8,13 @@ For each puzzle, I will give my personal difficulty, how I proceeded to solve it
 
 ## Calendar
 
-| Mon         | Tue         | Wed | Thu | Fri         | Sat         | Sun         |
-|-------------|-------------|-----|-----|-------------|-------------|-------------|
-|             |             |     |     | [1](#day-1) | [2](#day-2) | [3](#day-3) |
-| [4](#day-4) | [5](#day-5) | 6   | 7   | 8           | 9           | 10          |
-| 11          | 12          | 13  | 14  | 15          | 16          | 17          |
-| 18          | 19          | 20  | 21  | 22          | 23          | 24          |
-| 25          | 26          | 27  | 28  | 29          | 30          | 31          |
+| Mon         | Tue         | Wed         | Thu | Fri         | Sat         | Sun         |
+|-------------|-------------|-------------|-----|-------------|-------------|-------------|
+|             |             |             |     | [1](#day-1) | [2](#day-2) | [3](#day-3) |
+| [4](#day-4) | [5](#day-5) | [6](#day-6) | 7   | 8           | 9           | 10          |
+| 11          | 12          | 13          | 14  | 15          | 16          | 17          |
+| 18          | 19          | 20          | 21  | 22          | 23          | 24          |
+| 25          | 26          | 27          | 28  | 29          | 30          | 31          |
 
 ## [Day 1](https://github.com/guimochi/advent_of_code2023/tree/main/day1)
 
@@ -175,21 +175,51 @@ any time soon.
 - Class
 - List comprehension
 
-## Day 5
+## [Day 5](https://github.com/guimochi/advent_of_code2023/blob/main/day5)
 
-### Part 1
+### [Part 1](https://github.com/guimochi/advent_of_code2023/blob/main/day5/part1.py)
 
-pop issues
-hard input to manipulate
-issue because i can't create a direct path I need to retrieve because i have dict of tuple. i can't just input seed and
-ill get soil number
-inverted dest and soil
-key value for `a_to_b` is dumb
-I realize the values that were used in the input are huge. I can't create complete real dictionnary, i only need to keep
-track of the offset for a specific range
-used continue instead of break 🥲
+#### Difficulty: ⭐️⭐️⭐️⭐️⭐️
 
-### Part 2
+#### Duration: Approximately 3 hours
 
-abandon ship
-it probably have an imbricated loop somewhere
+I encountered a problem with the `pop` function. Initially, I was under the impression that it removed an element from
+the beginning of a list, but it actually removes from the end. <br>
+The inputs were quite large and difficult to handle. <br>
+In the map input, the destination was placed before the source, which was confusing. <br>
+The key value from `a_to_b` was a tuple of strings, but I should have used a single string and obtained the path from a
+different source.<br>
+I realized that the input values were extremely large. It wasn't feasible to create a complete dictionary, so I had to
+keep track of the offset for a specific range.<br>
+I made a mistake when I used a `continue` statement instead of `break`. 🥲
+
+#### Concepts Learned
+
+- pop
+- list comprehension
+- dictionary
+- continue vs break
+- storing the minimum amount of data is valuable
+
+### [Part 2](https://github.com/guimochi/advent_of_code2023/blob/main/day5/part2.py)
+
+#### Difficulty: 💀
+
+#### Duration: ??
+
+I suspect there might be a nested loop in my code. Despite my efforts to optimize it, I didn't succeed. I spent an
+entire day trying to solve and optimize this issue.<br>
+When I ran out of ideas, I turned to Bing chat for help. I utilized as many Python functions as possible with
+IntervalThree and multi-threading, but to no avail. Eventually, I had to abandon my approach.<br>
+In the end, I resorted to a completely different solution that I found online. To be honest, I don't fully understand it
+yet.
+
+#### Concepts Learned
+
+- intervaltree
+- multi-threading
+- python functions
+
+## Day 6
+
+Incoming...
