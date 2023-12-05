@@ -177,6 +177,8 @@ any time soon.
 
 ## Day 5
 
+### Part 1
+
 pop issues
 hard input to manipulate
 issue because i can't create a direct path I need to retrieve because i have dict of tuple. i can't just input seed and
@@ -187,4 +189,7 @@ I realize the values that were used in the input are huge. I can't create comple
 track of the offset for a specific range
 used continue instead of break 🥲
 
- 
+### Part 2
+
+abandon ship
+it probably have an imbricated loop somewhere

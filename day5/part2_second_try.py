@@ -1,25 +1,22 @@
 import re
 from typing import Dict, Tuple, List
 
+from intervaltree import IntervalTree, Interval
+
 
 def create_map(lines):
-    lines.reverse()
-    a_to_b: Dict[Tuple[str, str], Dict[Tuple[int, int], int]] = {}
-    i = 0
+    a_to_b: Dict[Tuple[str, str], IntervalTree] = {}
     while lines:
-        line = lines.pop()
+        line = lines.pop(0)
         a, b = line.replace(' map:\n', "").split('-to-')
-        a_to_b[(a, b)] = {}
-        # check if lines is empty or line is an empty string
+        a_to_b[(a, b)] = IntervalTree()
         while lines:
-            i += 1
-            line = lines.pop()
+            line = lines.pop(0)
             if line == "\n":
                 break
             destination, source, span = map(int, line.split())
             offset = destination - source
-            a_to_b[(a, b)][(source, source + span - 1)] = offset
-
+            a_to_b[(a, b)].add(Interval(source, source + span, offset))
     return a_to_b
 
 
@@ -71,17 +68,15 @@ def ranges_intersect(range1, range2):
     return not (b < c or d < a)
 
 
-def go_to_end(a_to_b: Dict[Tuple[str, str], Dict[Tuple[int, int], int]], parcours: List[Tuple[str, str]],
-              step: int) -> int:
+def go_to_end(a_to_b: Dict[Tuple[str, str], IntervalTree], parcours: List[Tuple[str, str]], step: int) -> int:
     for conversion in parcours:
-        for tuple_span in a_to_b[conversion]:
-            if tuple_span[0] <= step <= tuple_span[1]:
-                step = step + a_to_b[conversion][tuple_span]
-                break
+        intervals = a_to_b[conversion][step]
+        if intervals:
+            step += intervals.pop().data
     return step
 
 
-with (open("test.txt", "r") as f):
+with (open("input.txt", "r") as f):
     lines = f.readlines()
     # get seeds to check
     seeds: List[Tuple[str, str]] = get_seeds(lines[0])
