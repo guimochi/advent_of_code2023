@@ -1,4 +1,4 @@
-with (open("part1", "r") as f):
+with (open("input.txt", "r") as f):
     sum = 0
     for line in f.readlines():
         card, num_values = line.split(":")

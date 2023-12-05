@@ -171,8 +171,20 @@ it won't be
 any time soon.
 
 #### Concepts Learned
+
 - Class
 - List comprehension
 
 ## Day 5
-Incoming...
+
+pop issues
+hard input to manipulate
+issue because i can't create a direct path I need to retrieve because i have dict of tuple. i can't just input seed and
+ill get soil number
+inverted dest and soil
+key value for `a_to_b` is dumb
+I realize the values that were used in the input are huge. I can't create complete real dictionnary, i only need to keep
+track of the offset for a specific range
+used continue instead of break 🥲
+
+ 
