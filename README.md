@@ -8,13 +8,13 @@ For each puzzle, I will give my personal difficulty, how I proceeded to solve it
 
 ## Calendar
 
-| Mon         | Tue         | Wed         | Thu | Fri         | Sat         | Sun         |
-|-------------|-------------|-------------|-----|-------------|-------------|-------------|
-|             |             |             |     | [1](#day-1) | [2](#day-2) | [3](#day-3) |
-| [4](#day-4) | [5](#day-5) | [6](#day-6) | 7   | 8           | 9           | 10          |
-| 11          | 12          | 13          | 14  | 15          | 16          | 17          |
-| 18          | 19          | 20          | 21  | 22          | 23          | 24          |
-| 25          | 26          | 27          | 28  | 29          | 30          | 31          |
+| Mon         | Tue         | Wed         | Thu         | Fri         | Sat         | Sun         |
+|-------------|-------------|-------------|-------------|-------------|-------------|-------------|
+|             |             |             |             | [1](#day-1) | [2](#day-2) | [3](#day-3) |
+| [4](#day-4) | [5](#day-5) | [6](#day-6) | [7](#day-7) | 8           | 9           | 10          |
+| 11          | 12          | 13          | 14          | 15          | 16          | 17          |
+| 18          | 19          | 20          | 21          | 22          | 23          | 24          |
+| 25          | 26          | 27          | 28          | 29          | 30          | 31          |
 
 ## [Day 1](https://github.com/guimochi/advent_of_code2023/tree/main/day1)
 
@@ -219,7 +219,37 @@ yet.
 - intervaltree
 - multi-threading
 - python functions
+- excalidraw
 
-## Day 6
+## [Day 6](https://github.com/guimochi/advent_of_code2023/blob/main/day6)
+
+### [Part 1](https://github.com/guimochi/advent_of_code2023/blob/main/day6/part1.py)
+
+#### Difficulty: ⭐️☆☆☆☆
+
+#### Duration: 1 hours 10 minutes
+
+I misunderstood the assignment once again. I was under the impression that I had to keep only the fastest races, not all
+those that exceeded the previous record. <br>
+I spent more time searching for suitable data structures than actually solving the problem. The task was quite
+straightforward otherwise.
+
+#### Concepts learned
+
+- heapq
+
+### [Part 2](https://github.com/guimochi/advent_of_code2023/blob/main/day6/part2.py)
+
+#### Difficulty: 🧸
+
+The only modification I made was in the way the lines were read.<br>
+However, after resolving this, I looked up an online solution. I think I'll adopt this approach daily from now on. The
+solution presented wasn't necessarily more optimal, but it did provide strategies for faster resolution.
+
+#### Concepts learned
+
+- zip
+
+## [Day 7](https://github.com/guimochi/advent_of_code2023/blob/main/day7)
 
 Incoming...
