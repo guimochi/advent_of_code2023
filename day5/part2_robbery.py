@@ -1,6 +1,8 @@
+import time
 
+start_time = time.time()
 
-inputs, *blocks = open("input.txt").read().split("\n\n")
+inputs, *blocks = open("test.txt").read().split("\n\n")
 
 inputs = list(map(int, inputs.split(":")[1].split()))
 
@@ -31,3 +33,6 @@ for block in blocks:
     seeds = new
 
 print(min(seeds)[0])
+end_time = time.time()
+elapsed_time = end_time - start_time
+print(f"The code took {elapsed_time} seconds to run.")
