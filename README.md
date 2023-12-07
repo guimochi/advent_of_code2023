@@ -9,7 +9,7 @@ For each puzzle, I will give my personal difficulty, how I proceeded to solve it
 | Mon         | Tue         | Wed         | Thu         | Fri         | Sat         | Sun         |
 |-------------|-------------|-------------|-------------|-------------|-------------|-------------|
 |             |             |             |             | [1](#day-1) | [2](#day-2) | [3](#day-3) |
-| [4](#day-4) | [5](#day-5) | [6](#day-6) | [7](#day-7) | 8           | 9           | 10          |
+| [4](#day-4) | [5](#day-5) | [6](#day-6) | [7](#day-7) | [8](#day-8)           | 9           | 10          |
 | 11          | 12          | 13          | 14          | 15          | 16          | 17          |
 | 18          | 19          | 20          | 21          | 22          | 23          | 24          |
 | 25          | 26          | 27          | 28          | 29          | 30          | 31          |
@@ -268,13 +268,15 @@ However, this was unnecessary. I could have simply used a dictionary, but I forg
 implement this in the second part.<br>
 Finally, I used `heapq` to sort all the hands.
 
-#### Concept learned
+#### Concepts learned
 
 - not to use Enum
 - all the compare function in a class
 - heapq uses lt
 
 ### [Part 2](https://github.com/guimochi/advent_of_code2023/blob/main/day7/part2.py)
+
+#### Difficulty: ⭐️⭐️☆☆☆
 
 #### Duration: 30 minutes
 
@@ -292,3 +294,5 @@ Upon making this adjustment, I noticed that I could alter the `if-else` conditio
 first element instead of using `max()`. Moreover, I believe that invoking `max()` every time I performed the check,
 rather than sorting from the start, was inefficient. However, I decided not to modify this at the moment due to other
 project commitments.<br>
+
+## Day 8
