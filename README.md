@@ -1,10 +1,7 @@
 # [Advent of code 2023](https://adventofcode.com/2023)
 
-My solutions to the small programming puzzles
-
-All my solutions will be posted here. I have decided to use this challenge as an opportunity to refine my skills in
-Python.
-For each puzzle, I will give my personal difficulty, how I proceeded to solve it and what I learned.
+A daily updated repository of my Python solutions for the Advent of Code challenges. This project reflects my journey of learning Python and enhancing my problem-solving skills, one puzzle at a time.<br>
+For each puzzle, I will give my personal difficulty, how I proceeded to solve it and what I learned from it.
 
 ## Calendar
 
