@@ -1,6 +1,7 @@
 # [Advent of code 2023](https://adventofcode.com/2023)
 
-A daily updated repository of my Python solutions for the Advent of Code challenges. This project reflects my journey of learning Python and enhancing my problem-solving skills, one puzzle at a time.<br>
+A daily updated repository of my Python solutions for the Advent of Code challenges. This project reflects my journey of
+learning Python and enhancing my problem-solving skills, one puzzle at a time.<br>
 For each puzzle, I will give my personal difficulty, how I proceeded to solve it and what I learned from it.
 
 ## Calendar
@@ -249,4 +250,45 @@ solution presented wasn't necessarily more optimal, but it did provide strategie
 
 ## [Day 7](https://github.com/guimochi/advent_of_code2023/blob/main/day7)
 
-Incoming...
+### [Part 1](https://github.com/guimochi/advent_of_code2023/blob/main/day7/part1.py)
+
+#### Difficulty: ⭐️⭐️⭐️☆☆
+
+#### Duration: 1 hours 10 minutes
+
+The underlying logic of the code was fairly straightforward. There was no need to handle straights and flushes. I simply
+kept track of the repetition of each card.<br>
+The more challenging part was determining which hand was superior to the other. For this, I created a class that would
+keep track of the cards converted to an integer and their bid. I had to define the `__lt__` function to allow `heapq` to
+sort it.<br>
+I manually input each scenario and assigned them arbitrary values. The code has a lot of if-else statements, but I
+couldn't think of a different way to handle it.<br>
+If two hands had the same combination, I checked the cards one by one and used an `Enum` to assign values to them.
+However, this was unnecessary. I could have simply used a dictionary, but I forgot about them at the time. I did
+implement this in the second part.<br>
+Finally, I used `heapq` to sort all the hands.
+
+#### Concept learned
+
+- not to use Enum
+- all the compare function in a class
+- heapq uses lt
+
+### [Part 2](https://github.com/guimochi/advent_of_code2023/blob/main/day7/part2.py)
+
+#### Duration: 30 minutes
+
+The task initially appeared to be more intricate than it truly was.<br>My first step was to substitute the unwieldy enum
+with a straightforward function that utilized a map, setting the value of `J` to 0.<br>
+
+In my implementation, I focused on tracking the count of repetitions rather than the cards themselves. This allowed me
+to simply augment the highest occurrences by the count of `J`s.<br>
+
+I did face a challenge when `J` emerged as the most frequent value or if `J` was the sole value in the hand. I addressed
+this by eliminating its occurrence and incrementing the count of `J`s to the first element of my sorted hand, which
+maintains the repetition count for each card.<br>
+
+Upon making this adjustment, I noticed that I could alter the `if-else` conditions since I can now directly access the
+first element instead of using `max()`. Moreover, I believe that invoking `max()` every time I performed the check,
+rather than sorting from the start, was inefficient. However, I decided not to modify this at the moment due to other
+project commitments.<br>

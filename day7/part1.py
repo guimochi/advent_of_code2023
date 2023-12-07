@@ -50,7 +50,6 @@ class Hand:
         else:
             self.total = 0
 
-
     def __lt__(self, other):
         if not isinstance(other, Hand):
             return NotImplemented

@@ -28,15 +28,10 @@ class Hand:
             all_values = list(all_card.values())
         else:
             nb_j = all_card[0]
-            if nb_j < 5:
-                all_card.pop(0)
-            else:
-                all_card[0] = 0
-            print("before sort", all_card.values())
+            all_card[0] = 0
             all_values = sorted(all_card.values(), reverse=True)
-            print("after sort", all_values)
             all_values[0] += nb_j
-        print(cards, all_values, nb_j)
+
         if max(all_values) == 5:
             self.total = 6
         elif max(all_values) == 4:
