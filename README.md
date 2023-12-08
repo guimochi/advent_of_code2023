@@ -9,7 +9,7 @@ For each puzzle, I will give my personal difficulty, how I proceeded to solve it
 | Mon         | Tue         | Wed         | Thu         | Fri         | Sat         | Sun         |
 |-------------|-------------|-------------|-------------|-------------|-------------|-------------|
 |             |             |             |             | [1](#day-1) | [2](#day-2) | [3](#day-3) |
-| [4](#day-4) | [5](#day-5) | [6](#day-6) | [7](#day-7) | [8](#day-8)           | 9           | 10          |
+| [4](#day-4) | [5](#day-5) | [6](#day-6) | [7](#day-7) | [8](#day-8) | 9           | 10          |
 | 11          | 12          | 13          | 14          | 15          | 16          | 17          |
 | 18          | 19          | 20          | 21          | 22          | 23          | 24          |
 | 25          | 26          | 27          | 28          | 29          | 30          | 31          |
@@ -102,9 +102,9 @@ I barely had to make any changes to make it work.
 
 #### Duration: 3 hours 36 minutes
 
-TThis was quite a challenging experience. I initially misunderstood the puzzle not once, but twice. At first, I thought
-I was only supposed to check the numbers adjacent to the symbols. Then, I believed I was only supposed to check the top,
-left, bottom, and right. It finally dawned on me that I also had to check the diagonals. <br>
+This was indeed a challenging task. I misunderstood the puzzle not just once, but twice. Initially, I thought I was only
+supposed to check the numbers adjacent to the symbols. Then, I believed I was only supposed to check the top, left,
+bottom, and right. It finally dawned on me that I also had to check the diagonals. <br>
 
 I also lost some time due to my unfamiliarity with the Iterator. I wasn't aware that I couldn't iterate over it more
 than once. To overcome this, I had to cast it to a list, which allowed me to iterate over it multiple times. <br>
@@ -136,11 +136,13 @@ the challenge started. I had to spot the first misinterpretation right away beca
 
 #### Duration: 1 hour 16 minutes
 
-The logic stays the same but I had to add the match associated with all candidate coordinates to the coordinates. <br>
-This caused some keys issues with the dictionary. This solved the issued where a number wouldn't appear multiple times
-if
-iy was associated with multiple gears and also the fact that I had no way to associate a number with a gear. <br>
-It allowed me to link all adjacent numbers to gear. <br>
+The logic remains the same, but I had to associate each match with all candidate coordinates. <br>
+
+This led to some key issues with the dictionary. However, it resolved the problem where a number wouldn't appear
+multiple times if it was associated with multiple gears, and the fact that I had no way to associate a number with a
+gear. <br>
+
+This allowed me to link all adjacent numbers to a gear.
 
 ## [Day 4](https://github.com/guimochi/advent_of_code2023/blob/main/day4)
 
@@ -158,15 +160,15 @@ This was easy. Just split split split everywhere. The "hardest" part was managin
 
 #### Duration: Approximately 2 hours
 
-This was quite belong because I lost myself in what I wanted to do multiple times. The fact that I didn't create any
-function in the first exercice didn't help either. As this one was more complicated, i decided to create functions and I
-even created a class for the Scratchcard. <br>
-I had to think a bit for the recursive function. I initally planned to it
-iteratively but it seemed harder. I am quite satisfied with that I managed to it recursively. However, it takes several
-seconds to run. I am not sure if it is because of the recursive function or because I created a new Scratchcard for
-everytime I call the function `get_rewardd(self)` in Scratchcard. I may decide to optimize it a day in the future. But
-it won't be
-any time soon.
+This task was quite lengthy because I lost track of what I wanted to achieve multiple times. The fact that I didn't
+create any functions in the first exercise didn't help either. As this one was more complex, I decided to create
+functions and even created a class for the Scratchcard. <br>
+
+I had to put some thought into the recursive function. I initially planned to do it iteratively, but that seemed more
+challenging. I'm quite satisfied with how I managed to implement it recursively. However, it takes several seconds to
+run. I'm not sure if this is due to the recursive function or because I created a new Scratchcard every time I call
+the `get_rewardd(self)` function in Scratchcard. I might decide to optimize it someday in the future, but that won't be
+anytime soon.
 
 #### Concepts Learned
 
@@ -217,7 +219,7 @@ yet.
 - intervaltree
 - multi-threading
 - python functions
-- excalidraw
+- [Excalidraw](https://excalidraw.com/)
 
 ## [Day 6](https://github.com/guimochi/advent_of_code2023/blob/main/day6)
 
@@ -295,5 +297,58 @@ first element instead of using `max()`. Moreover, I believe that invoking `max()
 rather than sorting from the start, was inefficient. However, I decided not to modify this at the moment due to other
 project commitments.<br>
 
-## Day 8
+## [Day 8](https://github.com/guimochi/advent_of_code2023/blob/main/day8)
+
+### [Part 1](https://github.com/guimochi/advent_of_code2023/blob/main/day8/part1.py)
+
+#### Difficulty: ⭐️⭐️⭐️⭐️☆
+
+#### Duration: 2 hours
+
+Once again, I misunderstood the assignment. I’ve reached a point where I know I’ll be giving myself extra work every day
+because of this.<br>
+
+Initially, I believed that the input was the path to follow, and from there, the task was to find the shortest route. I
+spent about an hour trying to implement a recursive method, but as I’m not yet accustomed to them, I hit a roadblock.
+When I finally found a working algorithm, I realized that the assignment requirements were different. So, I had to start
+over. <br>
+
+However, the assignment turned out to be much simpler than I had initially thought. I was able to utilize the Noeud
+class and method I had previously created and build upon it.
+
+I then simply followed the input until I reached the destination.
+
+#### Concepts learned
+
+- recursive is one of my weak points
+- I really need to read the assignment more carefully
+
+### [Part 2](https://github.com/guimochi/advent_of_code2023/blob/main/day8/part2.py)
+
+#### Difficulty: ⭐️⭐️⭐️⭐️☆
+
+#### Duration: 45 minutes
+
+This one was challenging, particularly because there was no issue with the algorithm. However, I thought there might be
+a problem since I couldn't find the solution. So, I spent some time verifying that the algorithm wasn't the issue. <br>
+
+Honestly, I considered the smallest common multiple from the beginning, but I was unsure about implementing it from
+different starting points. I consulted a professor to confirm if I was on the right track, and he affirmed it. <br>
+
+I was aware that there was a simple algorithm to find the least common multiple (LCM), but I didn't know it by heart.
+So, I asked Bing chat to do it for me. <br>
+
+I first looked for the first time each path would reach a `..Z`. Once it reached a `..Z`, I made it loop again to find
+the next time it would return to it. That's when I realized that they looped perfectly, which was a significant help.
+Honestly, I'm still not sure how I was supposed to make it work from different starting points.<br>
+
+So I had to find the different _cycles_ for each starting point and find the LCM between them.
+
+#### Concepts learned
+
+- LCM algorithm
+- GCF algorithm
+
+## [Day 9](https://github.com/guimochi/advent_of_code2023/blob/main/day9)
+
 Incoming...
