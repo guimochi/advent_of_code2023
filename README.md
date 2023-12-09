@@ -9,7 +9,7 @@ For each puzzle, I will give my personal difficulty, how I proceeded to solve it
 | Mon         | Tue         | Wed         | Thu         | Fri         | Sat         | Sun         |
 |-------------|-------------|-------------|-------------|-------------|-------------|-------------|
 |             |             |             |             | [1](#day-1) | [2](#day-2) | [3](#day-3) |
-| [4](#day-4) | [5](#day-5) | [6](#day-6) | [7](#day-7) | [8](#day-8) | 9           | 10          |
+| [4](#day-4) | [5](#day-5) | [6](#day-6) | [7](#day-7) | [8](#day-8) | [9](#day-9)           | 10          |
 | 11          | 12          | 13          | 14          | 15          | 16          | 17          |
 | 18          | 19          | 20          | 21          | 22          | 23          | 24          |
 | 25          | 26          | 27          | 28          | 29          | 30          | 31          |
@@ -355,6 +355,8 @@ So I had to find the different _cycles_ for each starting point and find the LCM
 
 #### Difficulty: ⭐️⭐️☆☆☆
 
+#### Duration: 1 hour 
+
 The puzzle left me more impressed than necessary. I anticipated it to be more challenging given that it's the weekend, but it turned out to be less daunting than expected. <br>
 
 I approached the exercise by handling each input individually. I aim to continue this approach as much as possible, as I believe it's more logical. <br>
@@ -365,13 +367,19 @@ For each input, I constructed the entire pyramid. I used the sum of the line to 
 
 I then appended an extra zero to the last line. I iterated in reverse order, adding the last element of the current line and the previous one to the preceding line. <br>
 
-Once the pyramid was complete, I added the last element from the first line to a variable. <br>
+Once the pyramid was complete, I added the last element from the first line to a variable.
 
 #### Concepts learned
 
 - i need some time to wake up 
 
 ### [Part 2](https://github.com/guimochi/advent_of_code2023/blob/main/day9/part2.py)
+
+#### Difficulty: 🧸
+
+#### Duration: 5 minutes
+
+There’s not much to elaborate on here. Simply subtract instead of adding, and insert at the beginning rather than at the end. That’s essentially all there is to it.
 
 ## Day 10
 
