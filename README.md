@@ -351,4 +351,28 @@ So I had to find the different _cycles_ for each starting point and find the LCM
 
 ## [Day 9](https://github.com/guimochi/advent_of_code2023/blob/main/day9)
 
+### [Part 1](https://github.com/guimochi/advent_of_code2023/blob/main/day9/part1.py)
+
+#### Difficulty: ⭐️⭐️☆☆☆
+
+The puzzle left me more impressed than necessary. I anticipated it to be more challenging given that it's the weekend, but it turned out to be less daunting than expected. <br>
+
+I approached the exercise by handling each input individually. I aim to continue this approach as much as possible, as I believe it's more logical. <br>
+
+Initially, I struggled to grasp the input, often forgetting my task. However, I eventually managed to fully wake up and focus. <br>
+
+For each input, I constructed the entire pyramid. I used the sum of the line to check if it was entirely composed of zeros, which I thought was a clever idea. However, I later realized that this could pose problems if the line contained negative numbers and the sum coincidentally equaled zero.<br>
+
+I then appended an extra zero to the last line. I iterated in reverse order, adding the last element of the current line and the previous one to the preceding line. <br>
+
+Once the pyramid was complete, I added the last element from the first line to a variable. <br>
+
+#### Concepts learned
+
+- i need some time to wake up 
+
+### [Part 2](https://github.com/guimochi/advent_of_code2023/blob/main/day9/part2.py)
+
+## Day 10
+
 Incoming...
