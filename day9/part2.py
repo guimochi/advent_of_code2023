@@ -21,7 +21,7 @@ with open('input.txt', 'r') as f:
             nums.append(new_serie)
             j += 1
 
-        # add lat numbers
+        # add first numbers
         nums[last(nums)].insert(0, 0)
         for i in range(last(nums), 0, -1):
             i_first = 0
