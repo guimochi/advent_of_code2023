@@ -1,4 +1,4 @@
-# [Advent of code 2023](https://adventofcode.com/2023)
+**# [Advent of code 2023](https://adventofcode.com/2023)
 
 A daily updated repository of my Python solutions for the Advent of Code challenges. This project reflects my journey of
 learning Python and enhancing my problem-solving skills, one puzzle at a time.<br>
@@ -6,13 +6,13 @@ For each puzzle, I will give my personal difficulty, how I proceeded to solve it
 
 ## Calendar
 
-| Mon         | Tue         | Wed         | Thu         | Fri         | Sat         | Sun           |
-|-------------|-------------|-------------|-------------|-------------|-------------|---------------|
-|             |             |             |             | [1](#day-1) | [2](#day-2) | [3](#day-3)   |
-| [4](#day-4) | [5](#day-5) | [6](#day-6) | [7](#day-7) | [8](#day-8) | [9](#day-9) | [10](#day-10) |
-| 11          | 12          | 13          | 14          | 15          | 16          | 17            |
-| 18          | 19          | 20          | 21          | 22          | 23          | 24            |
-| 25          | 26          | 27          | 28          | 29          | 30          | 31            |
+| Mon           | Tue         | Wed         | Thu         | Fri         | Sat         | Sun           |
+|---------------|-------------|-------------|-------------|-------------|-------------|---------------|
+|               |             |             |             | [1](#day-1) | [2](#day-2) | [3](#day-3)   |
+| [4](#day-4)   | [5](#day-5) | [6](#day-6) | [7](#day-7) | [8](#day-8) | [9](#day-9) | [10](#day-10) |
+| [11](#day-11) | 12          | 13          | 14          | 15          | 16          | 17            |
+| 18            | 19          | 20          | 21          | 22          | 23          | 24            |
+| 25            | 26          | 27          | 28          | 29          | 30          | 31            |
 
 ## [Day 1](https://github.com/guimochi/advent_of_code2023/tree/main/day1)
 
@@ -397,6 +397,58 @@ end. That’s essentially all there is to it.
 
 ### [Part 1](https://github.com/guimochi/advent_of_code2023/blob/main/day10/part1.py)
 
+#### Difficulty: ⭐️⭐️⭐️⭐️☆
+
+#### Duration: 1 hour 10 minutes
+
+This task proved to be challenging. Dealing with graphs is not something I'm accustomed to, and it required a
+significant amount of thought before I could implement a solution.<br>
+
+I must admit, I'm not entirely pleased with the end result. The code is complex and even upon reviewing it now, I
+struggle to comprehend it.<br>
+
+In an attempt to navigate the maze, I chose to keep track of my origin point. This helped me determine the entry and
+exit points in a pipe. However, this approach still feels odd.<br>
+
+I also explored a solution that implemented a depth-first search. While it appears to be more elegant and efficient, I
+still find it difficult to understand.<br>
+
+#### Concepts learned
+
+- graph
+- depth-first search
+- enumerate
+
 ### [Part 2](https://github.com/guimochi/advent_of_code2023/blob/main/day10/part2.py)
 
-Incoming...
+#### Difficulty: 🫠?
+
+#### Duration: 1 hour 40 minutes
+
+I had no clue how to solve this at all. My professor showed me a gif which implemented a simple algorithm that check the
+direction of pipe. Here is the gif:
+https://imgur.com/a/ukstWKO#ZKurCuH <br>
+
+I was completely at a loss on how to solve this problem. My professor introduced me to a gif that demonstrated a simple
+algorithm for checking the direction of a pipe. Here is the link to the gif: https://imgur.com/a/ukstWKO#ZKurCuH <br>
+
+The workings of this algorithm are still unclear to me. Moreover, the success of my code seems to be input-dependent,
+which I find puzzling. If I alter the conditions under which the flag should be raised, the output can vary
+drastically - it could be completely incorrect or perfectly accurate, depending on the input. For instance, with one set
+of inputs, the code functions as expected, but with another, it fails. Interestingly, when I switch the conditions, the
+first set of inputs yields incorrect results, while the second set works fine... <br>
+
+I tested both inputs for the puzzle and found that the second one worked. I decided to stop there, as I have set a
+personal limit of three hours per puzzle due to other projects I need to focus on.
+
+#### Concepts learned
+
+- some puzzles are just too hard
+
+## [Day 11](https://github.com/guimochi/advent_of_code2023/blob/main/day11)
+
+### [Part 1](https://github.com/guimochi/advent_of_code2023/blob/main/day11/part1.py)
+
+### [Part 2](https://github.com/guimochi/advent_of_code2023/blob/main/day11/part2.py)
+
+Incoming...**
