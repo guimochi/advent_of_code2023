@@ -40,13 +40,13 @@ with open('input.txt', 'r') as f:
             for r in empty_row:
                 if ax < r < bx or bx < r < ax:
                     x_exp+=1
-            y_exp = 0
+
             for c in empty_col:
                 if ay < c < by or by < c < ay:
-                    y_exp += 1
+                    x_exp += 1
             # print(x_exp, y_exp)
 
-            d = abs(ax - bx) + abs(ay - by) + 1000000 * (x_exp) - x_exp + 1000000 * (y_exp) - y_exp
+            d = abs(ax - bx) + abs(ay - by) + 1000000 * (x_exp) - x_exp
             # print(univ[ax][ay] + " -> " + univ[bx][by] + " = " + str(d))
             dist += d
 

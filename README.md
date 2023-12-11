@@ -1,4 +1,4 @@
-**# [Advent of code 2023](https://adventofcode.com/2023)
+# [Advent of code 2023](https://adventofcode.com/2023)
 
 A daily updated repository of my Python solutions for the Advent of Code challenges. This project reflects my journey of
 learning Python and enhancing my problem-solving skills, one puzzle at a time.<br>
@@ -6,13 +6,13 @@ For each puzzle, I will give my personal difficulty, how I proceeded to solve it
 
 ## Calendar
 
-| Mon           | Tue         | Wed         | Thu         | Fri         | Sat         | Sun           |
-|---------------|-------------|-------------|-------------|-------------|-------------|---------------|
-|               |             |             |             | [1](#day-1) | [2](#day-2) | [3](#day-3)   |
-| [4](#day-4)   | [5](#day-5) | [6](#day-6) | [7](#day-7) | [8](#day-8) | [9](#day-9) | [10](#day-10) |
-| [11](#day-11) | 12          | 13          | 14          | 15          | 16          | 17            |
-| 18            | 19          | 20          | 21          | 22          | 23          | 24            |
-| 25            | 26          | 27          | 28          | 29          | 30          | 31            |
+| Mon           | Tue           | Wed         | Thu         | Fri         | Sat         | Sun           |
+|---------------|---------------|-------------|-------------|-------------|-------------|---------------|
+|               |               |             |             | [1](#day-1) | [2](#day-2) | [3](#day-3)   |
+| [4](#day-4)   | [5](#day-5)   | [6](#day-6) | [7](#day-7) | [8](#day-8) | [9](#day-9) | [10](#day-10) |
+| [11](#day-11) | [12](#day-12) | 13          | 14          | 15          | 16          | 17            |
+| 18            | 19            | 20          | 21          | 22          | 23          | 24            |
+| 25            | 26            | 27          | 28          | 29          | 30          | 31            |
 
 ## [Day 1](https://github.com/guimochi/advent_of_code2023/tree/main/day1)
 
@@ -425,10 +425,6 @@ still find it difficult to understand.<br>
 
 #### Duration: 1 hour 40 minutes
 
-I had no clue how to solve this at all. My professor showed me a gif which implemented a simple algorithm that check the
-direction of pipe. Here is the gif:
-https://imgur.com/a/ukstWKO#ZKurCuH <br>
-
 I was completely at a loss on how to solve this problem. My professor introduced me to a gif that demonstrated a simple
 algorithm for checking the direction of a pipe. Here is the link to the gif: https://imgur.com/a/ukstWKO#ZKurCuH <br>
 
@@ -449,6 +445,43 @@ personal limit of three hours per puzzle due to other projects I need to focus o
 
 ### [Part 1](https://github.com/guimochi/advent_of_code2023/blob/main/day11/part1.py)
 
+#### Difficulty: ⭐️⭐️⭐️☆☆
+
+#### Duration: 1 hour
+
+While the task was not particularly difficult, manipulating the input proved to be a challenge once again. I still don't
+have a complete understanding of how to handle it. There was also the subtle detail that inserting a row or column would
+offset all subsequent ones.<br>
+
+Apart from that, I don't believe the problem was overly complex. I created a new, expanded galaxy and then calculated
+the distance between each galaxy using absolute values.
+
+#### Concepts learned
+
+- \* to unpack
+- be careful about offsets
+- adding or replacing char in string is no fun
+
 ### [Part 2](https://github.com/guimochi/advent_of_code2023/blob/main/day11/part2.py)
 
-Incoming...**
+#### Difficulty: ⭐️⭐️⭐️☆☆
+
+#### Duration: 30 minutes
+
+This one was intriguing. It was not possible to recreate a new galaxy, so I had to utilize the index of empty lines or
+columns.<br>
+
+I verified whether we cross any empty line/row while moving from one galaxy to another. I believe I found an ingenious
+method to check this by swapping `ax` with `bx` and `ay` with `by`. Initially, I had two counters, but I later realized
+that one was sufficient.<br>
+
+I then multiplied the counter by the expansion size and subtracted the counter's value. This is crucial because when
+calculating the distance without expansion, we already traverse the expanded part once.
+
+## [Day 12](https://github.com/guimochi/advent_of_code2023/blob/main/day12)
+
+### [Part 1](https://github.com/guimochi/advent_of_code2023/blob/main/day12/part1.py)
+
+### [Part 2](https://github.com/guimochi/advent_of_code2023/blob/main/day12/part2.py)
+
+Incoming...
