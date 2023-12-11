@@ -12,7 +12,7 @@ def replace_char(string, char, index):
     return string[:index] + char + string[index + 1:]
 
 
-with open('input.txt', 'r') as f:
+with open('test.txt', 'r') as f:
     univ = [line.replace('\n', "") for line in f]
 
     empty_row = [r for r, l in enumerate(univ) if '#' not in l]

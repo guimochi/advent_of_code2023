@@ -17,16 +17,6 @@ with open('input.txt', 'r') as f:
 
     empty_row = [r for r, l in enumerate(univ) if '#' not in l]
     empty_col = [c for c, ch in enumerate(zip(*univ)) if '#' not in ch]
-    offset = 0
-    for r in empty_row:
-        univ.insert(r + offset, '.' * len(univ[0]))
-        offset += 1
-    print(empty_row)
-    offset = 0
-    for c in empty_col:
-        for r in range(len(univ)):
-            univ[r] = insert_char(univ[r], '.', c + offset)
-        offset += 1
 
     gals = []
     i = 1
@@ -36,17 +26,28 @@ with open('input.txt', 'r') as f:
             gals.append((r, match.start()))
             univ[r] = replace_char(univ[r], str(i), match.start())
             i += 1
-    print(gals)
-    for u in univ:
-        print(u)
+    # print(gals)
+    # for u in univ:
+    #     print(u)
 
     dist = 0
     for i in range(len(gals) - 1):
         for j in range(i + 1, len(gals)):
             ax, ay = gals[i]
             bx, by = gals[j]
-            d = abs(ax - bx) + abs(ay - by)
-            print(univ[ax][ay] + " -> " + univ[bx][by] + " = " + str(d))
+            # vertical distance
+            x_exp = 0
+            for r in empty_row:
+                if ax < r < bx or bx < r < ax:
+                    x_exp+=1
+            y_exp = 0
+            for c in empty_col:
+                if ay < c < by or by < c < ay:
+                    y_exp += 1
+            # print(x_exp, y_exp)
+
+            d = abs(ax - bx) + abs(ay - by) + 1000000 * (x_exp) - x_exp + 1000000 * (y_exp) - y_exp
+            # print(univ[ax][ay] + " -> " + univ[bx][by] + " = " + str(d))
             dist += d
 
     print(dist)
