@@ -1,11 +1,15 @@
+import time
+
+start_time = time.time()
+
 cache = {}
 
 
 def count(cfg, nums):
     # check si on est dans le cache, la fonction ne sera lance que si on n'est pas dedans
-    key = (cfg, nums)
-    if key in cache:
-        return cache[key]
+    # key = (cfg, nums)
+    # if key in cache:
+    #     return cache[key]
 
     if cfg == "":
         return 1 if not nums else 0
@@ -19,7 +23,7 @@ def count(cfg, nums):
     # dans le cas ou c'est un # ou ?. on va faire le check pour voir s'il est possible ce continuer
     if cfg[0] in "#?":
         if (
-            # s'il faut plus de block qu'il n'y de d'espace
+            # il y a assez de places pour que ce soit possible
             nums[0] <= len(cfg)
             # s'il y a un point par les nums[0] prochain caractere
             and "." not in cfg[: nums[0]]
@@ -30,7 +34,7 @@ def count(cfg, nums):
             results += count(cfg[nums[0] + 1 :], nums[1:])
 
     # enregistre le resultat dans le cache
-    cache[key] = results
+    # cache[key] = results
     return results
 
 
@@ -45,3 +49,7 @@ with open("input.txt", "r") as f:
 
         total += count(cfg, nums)
     print(total)
+
+end_time = time.time()
+elapsed_time = end_time - start_time
+print(f"The code took {elapsed_time} seconds to run.")

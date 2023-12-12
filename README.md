@@ -6,13 +6,13 @@ For each puzzle, I will give my personal difficulty, how I proceeded to solve it
 
 ## Calendar
 
-| Mon           | Tue           | Wed         | Thu         | Fri         | Sat         | Sun           |
-|---------------|---------------|-------------|-------------|-------------|-------------|---------------|
-|               |               |             |             | [1](#day-1) | [2](#day-2) | [3](#day-3)   |
-| [4](#day-4)   | [5](#day-5)   | [6](#day-6) | [7](#day-7) | [8](#day-8) | [9](#day-9) | [10](#day-10) |
-| [11](#day-11) | [12](#day-12) | 13          | 14          | 15          | 16          | 17            |
-| 18            | 19            | 20          | 21          | 22          | 23          | 24            |
-| 25            | 26            | 27          | 28          | 29          | 30          | 31            |
+| Mon           | Tue           | Wed           | Thu         | Fri         | Sat         | Sun           |
+|---------------|---------------|---------------|-------------|-------------|-------------|---------------|
+|               |               |               |             | [1](#day-1) | [2](#day-2) | [3](#day-3)   |
+| [4](#day-4)   | [5](#day-5)   | [6](#day-6)   | [7](#day-7) | [8](#day-8) | [9](#day-9) | [10](#day-10) |
+| [11](#day-11) | [12](#day-12) | [13](#day-13) | 14          | 15          | 16          | 17            |
+| 18            | 19            | 20            | 21          | 22          | 23          | 24            |
+| 25            | 26            | 27            | 28          | 29          | 30          | 31            |
 
 ## [Day 1](https://github.com/guimochi/advent_of_code2023/tree/main/day1)
 
@@ -482,6 +482,39 @@ calculating the distance without expansion, we already traverse the expanded par
 
 ### [Part 1](https://github.com/guimochi/advent_of_code2023/blob/main/day12/part1.py)
 
+#### Difficulty: ⭐️⭐️⭐️☆☆
+
+#### Duration: 1 hour 10 minutes
+
+I was aware that my solution would work for part 2, but I still decided to proceed with it because I couldn't
+conceive a better one. I was eager to attempt a recursive approach as I believed it was the most effective method,
+but unfortunately, I was unsuccessful. <br>
+
+So, I resorted to brute force, generating every possible scenario and verifying their validity. There was nothing
+particularly ingenious about this method, but it was effective nonetheless.
+
 ### [Part 2](https://github.com/guimochi/advent_of_code2023/blob/main/day12/part2.py)
+
+#### Difficulty: ❌
+
+#### Duration: 2 hours 30 minutes
+
+I was aware that I wouldn’t be able to solve it, or at the very least, it would take me an extended period to devise a
+solution. Consequently, I decided to refer to online solutions, and I’m pleased with that decision. <br>
+
+The code is quite complex to elucidate, but I have meticulously commented on every single part for clarity
+
+#### Concepts learned
+
+- pruning
+- memorisation
+- diffult problems can be easily decomposed
+- improved my undestanding of recursivity
+
+## [Day 13](https://github.com/guimochi/advent_of_code2023/blob/main/day13)
+
+### [Part 1](https://github.com/guimochi/advent_of_code2023/blob/main/day13/part1.py)
+
+### [Part 2](https://github.com/guimochi/advent_of_code2023/blob/main/day13/part2.py)
 
 Incoming...
