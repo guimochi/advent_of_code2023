@@ -13,13 +13,6 @@ def transpose_blocks(blocks: [[str]]):
     return ret
 
 
-def check_prev(centers: [int], r_line: {int: str}):
-    for center in centers:
-        valid = True
-
-    pass
-
-
 def ref_row(blocks):
     nb_row = 0
     for block in blocks:

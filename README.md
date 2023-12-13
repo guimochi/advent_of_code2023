@@ -6,13 +6,13 @@ For each puzzle, I will give my personal difficulty, how I proceeded to solve it
 
 ## Calendar
 
-| Mon           | Tue           | Wed           | Thu         | Fri         | Sat         | Sun           |
-|---------------|---------------|---------------|-------------|-------------|-------------|---------------|
-|               |               |               |             | [1](#day-1) | [2](#day-2) | [3](#day-3)   |
-| [4](#day-4)   | [5](#day-5)   | [6](#day-6)   | [7](#day-7) | [8](#day-8) | [9](#day-9) | [10](#day-10) |
-| [11](#day-11) | [12](#day-12) | [13](#day-13) | 14          | 15          | 16          | 17            |
-| 18            | 19            | 20            | 21          | 22          | 23          | 24            |
-| 25            | 26            | 27            | 28          | 29          | 30          | 31            |
+| Mon           | Tue           | Wed           | Thu           | Fri         | Sat         | Sun           |
+|---------------|---------------|---------------|---------------|-------------|-------------|---------------|
+|               |               |               |               | [1](#day-1) | [2](#day-2) | [3](#day-3)   |
+| [4](#day-4)   | [5](#day-5)   | [6](#day-6)   | [7](#day-7)   | [8](#day-8) | [9](#day-9) | [10](#day-10) |
+| [11](#day-11) | [12](#day-12) | [13](#day-13) | [14](#day-14) | 15          | 16          | 17            |
+| 18            | 19            | 20            | 21            | 22          | 23          | 24            |
+| 25            | 26            | 27            | 28            | 29          | 30          | 31            |
 
 ## [Day 1](https://github.com/guimochi/advent_of_code2023/tree/main/day1)
 
@@ -508,13 +508,54 @@ The code is quite complex to elucidate, but I have meticulously commented on eve
 
 - pruning
 - memorisation
-- diffult problems can be easily decomposed
-- improved my undestanding of recursivity
+- difficult problems can be easily decomposed
+- improved my understanding of recursive functions
 
 ## [Day 13](https://github.com/guimochi/advent_of_code2023/blob/main/day13)
 
 ### [Part 1](https://github.com/guimochi/advent_of_code2023/blob/main/day13/part1.py)
 
+### [Part 1](https://github.com/guimochi/advent_of_code2023/blob/main/day12/part1.py)
+
+#### Difficulty: ⭐️⭐️⭐️☆☆
+
+#### Duration: 1 hour
+
+My approach is straightforward. I iterate through all the blocks, and if I encounter two similar rows adjacent to each
+other, I store them in an array. Then, I verify if it’s the center of reflection. <br>
+
+Transposing all the columns into rows seemed like a simple and intuitive idea. However, I ended up providing the input
+twice. I could have transposed the block and rechecked it only if necessary. <br>
+
+Although the code lacks proper documentation, I believe I should have created more functions for better clarity. <br>
+
+#### Concepts learned
+
+- transposing lines
+
 ### [Part 2](https://github.com/guimochi/advent_of_code2023/blob/main/day13/part2.py)
+
+#### Difficulty: ⭐️⭐️⭐️⭐️☆
+
+#### Duration: 1 hour 20 minutes
+
+This time I documented all functions and explained all checks. This second part is now easier to understand than the
+first one, even though it was a bit harder. <br>
+
+I didn’t go through the whole input twice. I used the transpose again. The fact that having a smudge could
+transform a line into the center of reflection was hard easy to grasp. Thankfully they gave it in the example,
+otherwise I would have probably spent a lot more time. <br>
+
+Furthermore, I misunderstood the assignment (again…). I thought that the smudge would change the line of reflection from
+horizontal to vertical and vice-versa, not that it could change it from one place to another. So I lost a bit of time
+fixing that. <br>
+
+Overall I am quite satisfied, but there are so many lines of code. There must be ways to do it a lot shorter. <br>
+
+## [Day 14](https://github.com/guimochi/advent_of_code2023/blob/main/day14)
+
+### [Part 1](https://github.com/guimochi/advent_of_code2023/blob/main/day14/part1.py)
+
+### [Part 2](https://github.com/guimochi/advent_of_code2023/blob/main/day14/part2.py)
 
 Incoming...

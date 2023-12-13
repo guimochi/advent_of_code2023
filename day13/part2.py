@@ -34,10 +34,10 @@ def get_smudge(block):
     for crr in candidates_rr:
         up = crr
         down = crr - 1
+        # retain nb of differences
         differences = 0
         # while in the block
         while down >= 0 and up < len(block):
-            # retain nb of differences
             differences += sum_smudge(block[up], block[down])
             up += 1
             down -= 1
