@@ -11,7 +11,7 @@ For each puzzle, I will give my personal difficulty, how I proceeded to solve it
 |               |               |               |               | [1](#day-1) | [2](#day-2) | [3](#day-3)   |
 | [4](#day-4)   | [5](#day-5)   | [6](#day-6)   | [7](#day-7)   | [8](#day-8) | [9](#day-9) | [10](#day-10) |
 | [11](#day-11) | [12](#day-12) | [13](#day-13) | [14](#day-14) | 15          | 16          | 17            |
-| 18            | 19            | 20            | 21            | 22          | 23          | 24            |
+| 18            | [19](#day-19) | 20            | 21            | 22          | 23          | 24            |
 | 25            | 26            | 27            | 28            | 29          | 30          | 31            |
 
 ## [Day 1](https://github.com/guimochi/advent_of_code2023/tree/main/day1)
@@ -556,6 +556,41 @@ Overall I am quite satisfied, but there are so many lines of code. There must be
 
 ### [Part 1](https://github.com/guimochi/advent_of_code2023/blob/main/day14/part1.py)
 
-### [Part 2](https://github.com/guimochi/advent_of_code2023/blob/main/day14/part2.py)
+#### Difficulty: ⭐️⭐️☆☆☆
 
-Incoming...
+#### Duration: 40 minutes
+
+Here's your revised text:
+
+I am genuinely pleased with this exercise. I'm beginning to grasp the concepts of unpacking, zipping, and enumerating in
+Python. Gradually, I'm becoming more adept at utilizing Python's tools. <br>
+
+## [Day 19](https://github.com/guimochi/advent_of_code2023/blob/main/day19)
+
+### [Part 1](https://github.com/guimochi/advent_of_code2023/blob/main/day19/part1.py)
+
+#### Difficulty: ⭐️⭐️☆☆☆
+
+#### Duration: 1 hour 30 minutes
+
+While the task wasn't challenging, it was somewhat monotonous due to the extensive input processing required.<br>
+
+Nonetheless, I gained substantial knowledge from a YouTube video discussing the problem.<br>
+
+Firstly, I was introduced to the `eval` function, which was previously unfamiliar to me. It enables the evaluation of a
+string as a Python expression. However, it can potentially interpret malicious code, so it's crucial to use it
+judiciously.<br>
+
+Secondly, I discovered that functions can be stored as values in a dictionary. I had contemplated this idea but hadn't
+delved deeply into it. It turns out to be quite straightforward to implement.<br>
+
+Lastly, I understood how Python processes function internally. Everything now makes sense. I had been curious about why
+Python always requires the `self` argument in a class. It's because Python first casts a method with the `type()`
+function before using it. Then, it places the object as the first argument of the function. This explains why we always
+have to include `self` as the first argument of a method.<br>
+
+#### Concepts learned
+
+- eval
+- storing functions in a dictionary
+- how Python processes functions internally
